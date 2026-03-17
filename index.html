@@ -350,41 +350,6 @@
     opacity: 0.4;
   }
 
-  /* TESTIMONIALS */
-  .testimonials {
-    background: var(--deep);
-    padding: 7rem 6rem; text-align: center;
-  }
-
-  .testimonials h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem; color: var(--white); margin-bottom: 4rem;
-    font-weight: 700;
-  }
-
-  .testimonials-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
-  }
-
-  .testimonial-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(201,168,76,0.15);
-    padding: 2.5rem; border-radius: 2px; text-align: left;
-  }
-
-  .stars { color: var(--gold); margin-bottom: 1.2rem; font-size: 1rem; }
-
-  .testimonial-card blockquote {
-    font-size: 0.95rem; color: rgba(255,255,255,0.75);
-    line-height: 1.8; font-style: italic;
-    margin-bottom: 1.5rem;
-  }
-
-  .testimonial-author {
-    font-size: 0.85rem; font-weight: 600; color: var(--gold);
-    letter-spacing: 1px;
-  }
-
   /* CTA SECTION */
   .cta-section {
     padding: 9rem 6rem;
@@ -491,8 +456,6 @@
     .about, .approach-inner, .cta-section { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 2rem; }
     .services { padding: 5rem 2rem; }
     .services-grid { grid-template-columns: 1fr; }
-    .testimonials-grid { grid-template-columns: 1fr; }
-    .testimonials { padding: 5rem 2rem; }
     .stats-bar { flex-wrap: wrap; }
     .stat-item { max-width: 50%; border-right: none; border-bottom: 1px solid rgba(26,26,46,0.15); }
     footer { padding: 3rem 2rem 1.5rem; }
@@ -510,7 +473,6 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#approach">Our Approach</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#connect" class="nav-cta">Book a Call</a></li>
   </ul>
 </nav>
@@ -581,7 +543,7 @@
       </svg>
       <h3>Life Coaching</h3>
       <p>Gain clarity on who you are, where you're going, and what's holding you back. We'll help you build a life aligned with your deepest values and God-given purpose.</p>
-      <span class="service-tag">→ Discover More</span>
+      <a href="#connect" class="service-tag">→ Discover More</a>
     </div>
     <div class="service-card">
       <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -590,7 +552,7 @@
       </svg>
       <h3>Couples Coaching</h3>
       <p>Strengthen your marriage, improve communication, and build a partnership that honours God and each other. Jimm and Pynqi guide you both — together.</p>
-      <span class="service-tag">→ Discover More</span>
+      <a href="#connect" class="service-tag">→ Discover More</a>
     </div>
     <div class="service-card">
       <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -599,7 +561,7 @@
       </svg>
       <h3>Leadership Coaching</h3>
       <p>For pastors, ministry leaders, and Christian entrepreneurs ready to lead with greater vision, resilience, and spiritual authority in their sphere of influence.</p>
-      <span class="service-tag">→ Discover More</span>
+      <a href="#connect" class="service-tag">→ Discover More</a>
     </div>
   </div>
 </section>
@@ -647,28 +609,6 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-  <h2 class="reveal">What Our Clients Say</h2>
-  <div class="testimonials-grid reveal">
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"Coaching with Jimm completely shifted how I see myself. For the first time, I had someone who could speak into my calling with both truth and compassion. I am a different person."</blockquote>
-      <div class="testimonial-author">— Marcus T., Business Owner</div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"Pynqi has a gift for seeing what you can't see in yourself. My husband and I joined the couples coaching and it genuinely saved our marriage. We can't thank them enough."</blockquote>
-      <div class="testimonial-author">— Grace & Daniel R.</div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"I was burned out, directionless, and about to walk away from ministry. Three months of coaching with Pastor Jimm gave me back my fire. I'm still here — and thriving."</blockquote>
-      <div class="testimonial-author">— Pastor Kelvin M.</div>
-    </div>
-  </div>
-</section>
-
 <!-- CTA / CONNECT -->
 <section class="cta-section" id="connect">
   <div class="cta-content reveal">
@@ -701,7 +641,6 @@
         <li><a href="#about">About Jimm &amp; Pynqi</a></li>
         <li><a href="#services">Coaching Services</a></li>
         <li><a href="#approach">Our Approach</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#connect">Book a Call</a></li>
       </ul>
     </div>
@@ -710,9 +649,9 @@
       <ul>
         <li><a href="mailto:hello@elifecoach.com.au">hello@elifecoach.com.au</a></li>
         <li><a href="#">Melbourne, Victoria</a></li>
-        <li><a href="#">Instagram</a></li>
+        <!-- <li><a href="#">Instagram</a></li>
         <li><a href="#">Facebook</a></li>
-        <li><a href="#">YouTube</a></li>
+        <li><a href="#">YouTube</a></li> -->
       </ul>
     </div>
   </div>
