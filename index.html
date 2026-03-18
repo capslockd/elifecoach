@@ -450,14 +450,25 @@
   @media (max-width: 900px) {
     nav { padding: 1rem 2rem; }
     nav ul { display: none; }
+
     .hero { grid-template-columns: 1fr; }
     .hero-content { padding: 6rem 2rem 3rem; }
     .hero-image { height: 50vh; }
-    .about, .approach-inner, .cta-section { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 2rem; }
+
+    .about, .cta-section { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 2rem; }
+
+    /* APPROACH — the main fix */
+    .approach { padding: 5rem 2rem; }
+    .approach-inner { grid-template-columns: 1fr; gap: 3rem; } /* was 8rem gap */
+    .step:hover { transform: none; }                            /* disable translateX on touch */
+    .approach-photo::before { display: none; }                  /* border overlay causes bleed */
+
     .services { padding: 5rem 2rem; }
     .services-grid { grid-template-columns: 1fr; }
+
     .stats-bar { flex-wrap: wrap; }
     .stat-item { max-width: 50%; border-right: none; border-bottom: 1px solid rgba(26,26,46,0.15); }
+
     footer { padding: 3rem 2rem 1.5rem; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   }
