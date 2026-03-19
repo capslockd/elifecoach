@@ -716,4 +716,13 @@ function sendContactEmail() {
     'Hi Jimm & Pynqi,\n\n' +
     'I would like to book a free 30-minute discovery call.\n\n' +
     'Name:  ' + name + '\n' +
-   
+    'Email: ' + email + '\n' +
+    (phone ? 'Phone: ' + phone + '\n' : '') +
+    '\nLooking forward to connecting!\n\n' + name
+  );
+
+  window.location.href = 'mailto:hello@elife-coach.com?subject=' + subject + '&body=' + body;
+}
+</script>
+</body>
+</html>
